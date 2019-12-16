@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="assets/stylesheets/reset.css" />
+    <link rel="stylesheet" href="assets/stylesheets/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Metrophobic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>What's the weather in...?</h1>
+    <form action="#" onsubmit="getWeatherData();return false">
+      <input type="text" id="city" placeholder="City" />
+      <div>
+        <input type="submit" id="submit" value="Get current weather" />
+      </div>
+    </form>
+    <div id="loading" class="invisible">Loading...</div>
+    <div id="errorMessage"></div>
+    <h1 id="title"></h1>
+    <div id="currentWeather">
+      <div id="description"></div>
+      <img />
+      <div id="temperature"></div>
+      <button
+        id="conversionButtonCtoF"
+        class="invisible"
+        onclick="convertCtoF()"
+      >
+        Convert to °F
+      </button>
+      <button
+        id="conversionButtonFtoC"
+        class="invisible"
+        onclick="convertFtoC()"
+      >
+        Convert to °C
+      </button>
+    </div>
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
+  </body>
+</html>
