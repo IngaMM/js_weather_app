@@ -11,7 +11,8 @@ body {
 }
 
 h1 {
-  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
   text-align: center;
   font-family: "Permanent Marker", cursive;
   font-size: 50px;
@@ -20,8 +21,9 @@ h1 {
   padding-bottom: 40px;
 }
 
-form {
-  text-align: center;
+form div {
+  display: flex;
+  justify-content: center;
 }
 
 input {
@@ -86,21 +88,23 @@ button:active,
   top: 1px;
 }
 
-.invisible {
-  display: none;
-}
-
-div#currentWeather,
 div#errorMessage,
-div#loading {
-  text-align: center;
+div#loading,
+div#icon,
+div#conversionButtons {
+  display: flex;
+  justify-content: center;
 }
 
 #description {
+  display: flex;
+  justify-content: center;
   font-weight: bold;
 }
 
 #temperature {
+  display: flex;
+  justify-content: center;
   margin-bottom: 10px;
 }
 
@@ -112,4 +116,8 @@ div#loading {
 #loading {
   font-family: "Permanent Marker", cursive;
   font-size: 50px;
+}
+
+.invisible {
+  display: none !important;
 }

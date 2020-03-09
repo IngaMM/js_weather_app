@@ -18,7 +18,9 @@
   <body>
     <h1>What's the weather in...?</h1>
     <form action="#" onsubmit="getWeatherData();return false">
-      <input type="text" id="city" placeholder="City" />
+      <div>
+        <input type="text" id="city" placeholder="City" />
+      </div>
       <div>
         <input type="submit" id="submit" value="Get current weather" />
       </div>
@@ -28,22 +30,26 @@
     <h1 id="title"></h1>
     <div id="currentWeather">
       <div id="description"></div>
-      <img />
+      <div id="icon">
+        <img />
+      </div>
       <div id="temperature"></div>
-      <button
-        id="conversionButtonCtoF"
-        class="invisible"
-        onclick="convertCtoF()"
-      >
-        Convert to °F
-      </button>
-      <button
-        id="conversionButtonFtoC"
-        class="invisible"
-        onclick="convertFtoC()"
-      >
-        Convert to °C
-      </button>
+      <div id="conversionButtons">
+        <button
+          id="conversionButtonCtoF"
+          class="invisible"
+          onclick="convertCtoF()"
+        >
+          Convert to °F
+        </button>
+        <button
+          id="conversionButtonFtoC"
+          class="invisible"
+          onclick="convertFtoC()"
+        >
+          Convert to °C
+        </button>
+      </div>
     </div>
     <script type="text/javascript" src="assets/scripts/main.js"></script>
   </body>
