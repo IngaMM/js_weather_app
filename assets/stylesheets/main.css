@@ -1,7 +1,6 @@
 body {
   font-family: "Metrophobic", sans-serif;
   background-color: white;
-  text-align: center;
   font-size: 30px;
   background: url(../pictures/default_background.jpg) no-repeat center center
     fixed;
@@ -12,11 +11,17 @@ body {
 }
 
 h1 {
+  flex-basis: 100%;
+  text-align: center;
   font-family: "Permanent Marker", cursive;
   font-size: 50px;
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 40px;
+}
+
+form {
+  text-align: center;
 }
 
 input {
@@ -83,6 +88,12 @@ button:active,
 
 .invisible {
   display: none;
+}
+
+div#currentWeather,
+div#errorMessage,
+div#loading {
+  text-align: center;
 }
 
 #description {

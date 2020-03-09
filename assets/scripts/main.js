@@ -52,7 +52,7 @@ const getWeatherData = () => {
       // Show error message and default background & font color
       loading.classList.add("invisible");
       errorMessage.classList.remove("invisible");
-      errorMessage.textContent = "City not found.";
+      errorMessage.textContent = "City not found";
       title.textContent = "";
       description.textContent = "";
       img.src = "";
