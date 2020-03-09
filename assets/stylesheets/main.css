@@ -1,9 +1,14 @@
 body {
   font-family: "Metrophobic", sans-serif;
-  background-image: url("../pictures/background.JPG");
   background-color: white;
   text-align: center;
   font-size: 30px;
+  background: url(../pictures/default_background.jpg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1 {
@@ -25,7 +30,7 @@ button,
   -moz-box-shadow: 3px 4px 0px 0px #899599;
   -webkit-box-shadow: 3px 4px 0px 0px #899599;
   box-shadow: 3px 4px 0px 0px #899599;
-  background: -webkit-gradient(
+  background: --webkit-gradient(
     linear,
     left top,
     left bottom,
@@ -49,11 +54,12 @@ button,
   padding: 7px 25px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #e1e2ed;
+  margin-bottom: 20px;
 }
 
 button:hover,
 #submit:hover {
-  background: -webkit-gradient(
+  background: --webkit-gradient(
     linear,
     left top,
     left bottom,
@@ -89,6 +95,7 @@ button:active,
 
 #errorMessage {
   color: red;
+  font-weight: bold;
 }
 
 #loading {
