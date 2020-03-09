@@ -11,7 +11,7 @@ const getWeatherData = () => {
   loading.classList.remove("invisible"); // Show loading message
   const city = document.getElementById("city").value; // Get city name from input field
   const url =
-    "http://api.openweathermap.org/data/2.5/weather?APPID=1fc3358fe4cd05550f79f25b6ec4e4e0&q=" +
+    "https://api.openweathermap.org/data/2.5/weather?APPID=1fc3358fe4cd05550f79f25b6ec4e4e0&q=" +
     city;
   fetch(url, { mode: "cors" })
     .then(function(response) {
