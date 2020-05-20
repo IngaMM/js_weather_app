@@ -122,7 +122,7 @@ const setBackgroundImageAndColor = icon => {
       break;
     case "50d":
     case "50n":
-      backgroundImage = "url('./assets/pictures/snow.jpg')";
+      backgroundImage = "url('./assets/pictures/mist.jpg')";
       color = "black";
       break;
     default:

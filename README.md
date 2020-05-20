@@ -17,3 +17,13 @@ The background image is chosen in dependance of the weather forecast. The websit
 
 Requirements
 Browser, internet access
+
+Pictures from Unsplash (https://unsplash.com) by
+Aaron Burden
+Annie Spratt
+Apaha Spi
+Inge Maria
+Luke Stackpoole
+Michal Mancewicz
+Wim van t' Einde
+Zbynek Burival
